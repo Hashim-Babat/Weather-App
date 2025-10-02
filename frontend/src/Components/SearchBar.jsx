@@ -13,7 +13,7 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex items-center bg-white/20 rounded-lg px-3 py-2 mb-4">
+    <form onSubmit={handleSubmit} className="flex items-center bg-white/20 rounded-2xl border-0 px-3 py-2 mb-4">
       <FaSearch className="text-white mr-2" />
       <input
         type="text"

@@ -11,7 +11,7 @@ function ForecastSection({ data }) {
           const date = new Date(day.dt_txt);
           const dayName = days[date.getDay()];
           return (
-            <div key={index} className="bg-white/20 rounded-lg p-3 text-center min-w-[70px]">
+            <div key={index} className="bg-white/20 rounded-lg hover:border-1 hover:bg-orange-300 hover:pointer p-3 text-center min-w-[70px]">
               <p>{dayName}</p>
               <img
                 alt="icon"
