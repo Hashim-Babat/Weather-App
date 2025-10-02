@@ -9,6 +9,8 @@ Author: Hashim Babat
 
 Getting Started (Local Setup)
 
+These instructions assume you used Vite for bootstrapping your React app (recommended). If you used Create React App, replace import.meta.env usage with process.env.REACT_APP_* and npm run dev with npm start.
+
 1. Clone the repo
 git clone https://github.com/Hashim-Babat/Weather-App.git
 cd frontend
