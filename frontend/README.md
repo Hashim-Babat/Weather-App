@@ -1,16 +1,51 @@
-# React + Vite
+# SkySight — Weather App 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive single-page Weather App built with React + Tailwind CSS.
+Fetches current weather and 5-day forecast for any city using OpenWeatherMap, with polished UI, loading/error states, localStorage last search and deploy-ready environment variable handling.
 
-Currently, two official plugins are available:
+Live demo: weather-app-ashy-five-99.vercel.app
+Author: Hashim Babat
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+Getting Started (Local Setup)
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+These instructions assume you used Vite for bootstrapping your React app (recommended). If you used Create React App, replace import.meta.env usage with process.env.REACT_APP_* and npm run dev with npm start.
 
-## Expanding the ESLint configuration
+1. Clone the repo
+git clone https://github.com/Hashim-Babat/Weather-App.git
+cd frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Install dependencies
+npm install
+ or
+yarn
+
+3. Create .env for your API key (IMPORTANT — DO NOT COMMIT)
+
+Create a file at the project root named .env (same level as package.json).
+Vite requires env vars to start with VITE_
+VITE_WEATHER_API_KEY=your_openweathermap_api_key_here
+
+
+Rules :
+No quotes around the value.
+Variable must begin with VITE_ for Vite to expose it to the client code.
+Never commit .env. See .gitignore below.
+
+4. .gitignore (ensure you have these entries)
+
+Add the following to .gitignore (project root):
+
+# Environment
+.env
+
+# dependencies
+node_modules/
+
+# build
+dist/
+
+5. Start dev server
+npm run dev
+# or
+yarn dev
