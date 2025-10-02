@@ -14,7 +14,7 @@ function Home() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const API_KEY = "c8590e5e71c059c0ff4042d384764d15"; // replace with OpenWeather API key
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
   // Fetch weather
   const fetchWeather = async (cityName) => {
