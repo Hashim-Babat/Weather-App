@@ -35,17 +35,11 @@ Never commit .env. See .gitignore below.
 4. .gitignore (ensure you have these entries)
 
 Add the following to .gitignore (project root):
-
-# Environment
 .env
-
-# dependencies
 node_modules/
-
-# build
 dist/
 
 5. Start dev server
 npm run dev
-# or
+or
 yarn dev
