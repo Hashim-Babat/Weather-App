@@ -60,7 +60,7 @@ function Home() {
       className="min-h-screen w-full flex flex-col items-center justify-center bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 shadow-lg w-[350px] md:w-[500px] text-white">
+      <div className="bg-transparent rounded-4xl p-6 shadow-2xl border-1 w-[350px] md:w-[500px] text-white">
         <Header />
         <SearchBar onSearch={(val) => setCity(val)} />
         {loading && <p className="text-center">Loading...</p>}
